@@ -3,9 +3,9 @@ import React, {useState} from 'react'
 import profile from './profile'
 
 function App() {
- return (
+return (
     
- )
+)
 }
 
 export default App;
