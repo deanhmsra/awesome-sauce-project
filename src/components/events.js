@@ -4,8 +4,8 @@ import EventInfo from './eventInfo';
 
 const EventsTable = () => {
     const eventsData = [
-        { name: 'Event 1', date: 'February 20, 2024 - 12:00PM', location: 'Eastside Stadium'},
-        { name: 'Event 2', date: 'February 20, 2024 - 13:00PM', location: 'Westside Stadium'}
+        { name: 'Event 1', date: 'February 20, 2024 - 12:00PM', location: 'East Side Stadium'},
+        { name: 'Event 2', date: 'February 20, 2024 - 13:00PM', location: 'West Side Stadium'}
     ];
 
 return (
