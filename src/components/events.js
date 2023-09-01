@@ -1,5 +1,4 @@
 import React from 'react';
-import eventInfo from './eventInfo';
 import EventInfo from './eventInfo';
 
 const EventsTable = () => {
