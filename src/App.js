@@ -1,10 +1,10 @@
 import './App.css';
 import React, {useState} from 'react'
-import profile from './components/profile'
+import Profile from './components/Profile'
 
 function App() {
  return (
-    
+    <Profile> </Profile>
  )
 }
 
