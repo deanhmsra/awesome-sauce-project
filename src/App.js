@@ -8,7 +8,9 @@ import events from './components/events'
 
 function App() {
  return (
-    <Profile> </Profile>
+   <div>
+    <Profile/>
+    </div>
  )
 }
 
