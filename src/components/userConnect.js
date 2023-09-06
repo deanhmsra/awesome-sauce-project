@@ -6,3 +6,8 @@ export default function userConnect() {
         </div>
         )
     } 
+
+
+
+
+    // instagram, facebook and email
