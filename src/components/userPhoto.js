@@ -5,5 +5,8 @@ const UserPhoto = ({ src }) => {
         <div className='user-photo'>
             <img src={src} alt='User Photo' />
         </div>
-    )
-}
+    );
+};
+
+
+export default UserPhoto;
