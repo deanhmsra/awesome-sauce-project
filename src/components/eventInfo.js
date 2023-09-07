@@ -1,5 +1,6 @@
 import React from 'react';
 
+//details of a single event
 const EventInfo = ({ eventName, eventDate, eventLocation}) => {
     return (
         <div>

@@ -9,7 +9,10 @@ const SocialMedia = ({ instagram, facebook, email}) => {
             <p><a href={facebook}>Facebook</a></p>
             <p><a href={`mailto:${email}`}>Email</a></p>
         </div>
-    );
-};
+        )
+    } 
 
-export default SocialMedia;
+
+
+
+    // instagram, facebook and email
