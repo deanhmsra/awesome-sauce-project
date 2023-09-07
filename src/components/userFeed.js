@@ -1,9 +1,9 @@
 import React from "react";
-import userConnect from "./userConnect";
+import UserConnect from "./userConnect";
 import events from "./events";
 
 
-const userConnect = () => {
+const Connect = () => {
     return (
         <div>
             <h1>Connect with User</h1>
@@ -11,8 +11,8 @@ const userConnect = () => {
          {/* Rendered the userConnect component */}
             <userConnect />
         </div>
-    )
-}
+    );
+};
 
 
 const UserFeed = () => {
