@@ -1,33 +1,31 @@
 import React from 'react';
+import UserInfo from './userInfo';
+import UserConnect from './userConnect';
 
 
-export default function Profile() {
-  return (
-    <div className="profile-container">
-      {/* User Profile Picture */}
-      <div className="profile-picture">
-        <img src="url_to_user_profile_image" alt="User Profile" />
-      </div>
+const Profile = () => {
+    const userName = 'John Doe'; 
+    const age = 25; 
+    const personalityType = 'INTJ'; 
+    const interests = ['Bar Hopping', 'Reading', 'Football'];
+    const instagram = 'https://www.instagram.com/johndoe/';
+    const facebook = 'https://www.facebook.com/johndoe/';
+    const email = 'hVh5I@example.com';
 
-      {/* User Information */}
-      <div className="user-info">
-        <h1>Username</h1>
-        <p>Personality Type: INFJ</p>
-        <p>Bio: This is a brief user bio.</p>
-      </div>
 
-      {/* List of Friends */}
-      <div className="friends-list">
-        <h2>Friends</h2>
-        <ul>
-          <li>Friend 1</li>
-          <li>Friend 2</li>
-          <li>Friend 3</li>
-        </ul>
-      </div>
-
-      {/* Edit Profile Button */}
-      <button className="edit-profile-button">Edit Profile</button>
-    </div>
-  );
+return ( 
+        <div>
+             <h1>Profile</h1>
+             <div className="user-container">
+                <div className= "user-info">
+             <img src="http://placekitten.com/200/300" alt="Profile Pic" />
+            <UserInfo userName={userName} age={age} personalityType={personalityType} interests={interests} />
+            </div>
+            <div className="user-connect">
+            <UserConnect instagram={instagram} facebook={facebook} email={email} />
+            </div>
+            </div>
+        </div>
+);
 };
+export default Profile;
