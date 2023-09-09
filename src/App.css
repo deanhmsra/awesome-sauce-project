@@ -37,11 +37,58 @@
   }
 }
 
-.user-personality {
+.user-personality, .user-interest {
   width: 500px;
   height: 200px;
   margin: 10px;
 }
-.list-item-personality {
+.list-item-personality, .list-item-interest {
   text-align: left;
+}
+.view-profile {
+  background-color: rgb(38, 170, 215);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+.username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.user-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+.user-info{
+  flex: 1;
+}
+.photo{
+  text-align: center;
+}
+.home{
+  text-align: center;
 }
