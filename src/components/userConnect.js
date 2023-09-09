@@ -14,5 +14,4 @@ const SocialMedia = ({ instagram, facebook, email}) => {
 
 
 
-
-    // instagram, facebook and email
+export default SocialMedia;

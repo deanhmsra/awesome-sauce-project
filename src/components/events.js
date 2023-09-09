@@ -1,35 +1,58 @@
 import React from 'react';
 import EventInfo from './eventInfo';
+import DisplayUsersInterest from './displayUsersInterest';
+import DisplayUsersPersonality from './displayUsersPersonality';
+import Button from 'react-bootstrap/Button';
 
 // rendering multiple instances of eventInfo.js
 const EventsTable = () => {
     const eventsData = [
-        { name: 'Event 1', date: 'February 20, 2024 - 12:00PM', location: 'East Side Stadium'},
-        { name: 'Event 2', date: 'February 20, 2024 - 13:00PM', location: 'West Side Stadium'}
+        { name: 'Pre-Game Tailgate', date: 'February 11, 2024 - 11:00 AM', location: 'Modelo Tailgate Zone', info: "https://www.raiders.com/promotions/modelo-tailgate-zone"},
+        { name: 'Superbowl', date: 'February 11, 2024 - 3:00 PM', location: 'Allegiant Stadium', info: "https://www.allegiantstadium.com/events/detail/superbowl-lviii"}
     ];
 
 
     return (
-        <div className="container mt-4"> //added class to create container, mt-4 adds top margin space
+        <div className="container mt-4"> 
           <h1 className="text-center">Events</h1>
-          <table className="table table-striped"> //bootstrap table stylings
-            <thead className="thead-dark"> //darkens table header
+          <table className="table table-striped"> 
+            <thead className="thead-dark"> 
               <tr>
                 <th>Event Name</th>
                 <th>Date & Time</th>
                 <th>Location</th>
+                <th>More Info</th>
               </tr>
             </thead>
             <tbody>
               {eventsData.map((event, index) => (
-                <EventInfo
-                  key={index}
-                  eventName={event.name}
-                  eventDate={event.date}
-                  eventLocation={event.location}
-                />
+                
+                  <tr key={index}>
+                  <td>{event.name}</td>
+                  <td>{event.date}</td>
+                  <td>{event.location}</td>
+                  <td>
+                    <a href= {event.info}> 
+                    <Button variant="dark">More Info</Button>
+                    </a>
+                  </td>
+                  </tr>
+                
               ))}
             </tbody>
+          </table>
+          <h1 className="text-center">Attendees</h1>
+          <table className="table table-striped">
+          <thead className="thead-dark">
+            <tr>
+              <th>Meet People with Similar Interests</th>
+              <th>Meet People with Similar Personality</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td><DisplayUsersInterest /></td>
+            <td><DisplayUsersPersonality /></td>
+          </tbody>
           </table>
         </div>
       );
