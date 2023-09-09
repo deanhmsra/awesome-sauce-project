@@ -32,7 +32,7 @@ const EventsTable = () => {
                   <td>{event.date}</td>
                   <td>{event.location}</td>
                   <td>
-                    <a href= {event.info}> 
+                    <a href= {event.info} target="_blank"> 
                     <Button variant="dark">More Info</Button>
                     </a>
                   </td>

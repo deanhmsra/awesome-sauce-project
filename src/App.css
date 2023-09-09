@@ -91,4 +91,10 @@
 }
 .home{
   text-align: center;
+  background-color: rgb(218, 69, 23);
+}
+.buttons{
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 20px;
 }
