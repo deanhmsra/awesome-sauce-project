@@ -3,8 +3,6 @@ const express = require('express')
 const app = express();
 const { Sequelize } = require('sequelize');
 
-const usersController = require('./controllers/users_controller');
-
 // Configuration / Middleware
 require('dotenv').config()
 app.use(express.json())
