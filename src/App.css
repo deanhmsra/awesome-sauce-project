@@ -86,3 +86,6 @@
 .user-info{
   flex: 1;
 }
+.photo{
+  text-align: center;
+}
