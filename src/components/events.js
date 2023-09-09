@@ -1,7 +1,7 @@
 import React from 'react';
 import EventInfo from './eventInfo';
 
-// rendering multiple instances of eventInfo.js
+// rendering multiple instances of eventInfo.js //
 const EventsTable = () => {
     const eventsData = [
         { name: 'Event 1', date: 'February 20, 2024 - 12:00PM', location: 'East Side Stadium'},
@@ -10,10 +10,10 @@ const EventsTable = () => {
 
 
     return (
-        <div className="container mt-4"> //added class to create container, mt-4 adds top margin space
+        <div className="container mt-4"> 
           <h1 className="text-center">Events</h1>
-          <table className="table table-striped"> //bootstrap table stylings
-            <thead className="thead-dark"> //darkens table header
+          <table className="table table-striped"> 
+            <thead className="thead-dark"> 
               <tr>
                 <th>Event Name</th>
                 <th>Date & Time</th>
