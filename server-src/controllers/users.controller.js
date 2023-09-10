@@ -22,7 +22,7 @@ users.get('/', async (req, res) => {
 
 users.get('/:id', async (req, res) => {
     try {
-        const foundUser = await User.findONe({
+        const foundUser = await User.findOne({
             where: {
                 user_id: req.params.id
             }
@@ -71,7 +71,8 @@ users.delete('/:id', async (req, res) => {
             }
         })
         res.status(200).json({
-            message: `Successfully deleted user id: ${id}`
+            message: `Successfully deleted user id: ${id}`,
+            deletedUser
         })
     } catch (error) {
         res.status(500).json(error)

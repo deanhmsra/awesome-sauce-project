@@ -4,11 +4,15 @@ const app = express();
 const { Sequelize } = require('sequelize');
 
 const usersController = require('./controllers/users_controller');
+const eventsController = require('./controllers/events_controller');
 
 // Configuration / Middleware
 require('dotenv').config()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+
+app.use('/users', usersController);
+app.use('/events', eventsController);
 
 // Root
 app.get('/', (req, res) => {
