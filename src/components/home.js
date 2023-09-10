@@ -15,7 +15,7 @@ function home (){
         <a href= "https://www.16personalities.com/free-personality-test" target="_blank"> 
             <Button variant="dark">Take Personality Test</Button>
         </a>
-        <Button variant="dark">Create Profile</Button>
+        <Button variant="dark" onClick={() => window.location.href = "/profile"}>Create Profile</Button>
         </div>
         </div>
     )
