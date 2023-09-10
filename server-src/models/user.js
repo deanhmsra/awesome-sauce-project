@@ -27,10 +27,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false
     },
-    birthdate: {
-        type: DataTypes.DATE,
-        allowNull: false
-    },
     personality_type: {
         type: DataTypes.STRING,
         allowNull: false
@@ -49,6 +45,10 @@ module.exports = (sequelize, DataTypes) => {
     },
     email: {
         type: DataTypes.TEXT,
+        allowNull: false
+    },
+    age: {
+        type: DataTypes.INTEGER,
         allowNull: false
     }
   }, {

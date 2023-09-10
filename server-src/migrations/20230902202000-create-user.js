@@ -17,10 +17,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      birthdate: {
-        type: Sequelize.DATE,
-        allowNull: false
-      },
       personality_type: {
         type: Sequelize.STRING,
         allowNull: false
@@ -39,6 +35,10 @@ module.exports = {
       },
       email: {
         type: Sequelize.TEXT,
+        allowNull: false
+      },
+      age: {
+        type: Sequelize.INTEGER,
         allowNull: false
       }
     });
