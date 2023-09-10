@@ -14,19 +14,19 @@ const UserInfo = ({ userName, age, personalityType, interests }) => {
           </thead>
           <tbody>
             <tr>
-              <td>Name</td>
+              <td>Name:</td>
               <td>{userName}</td>
             </tr>
             <tr>
-              <td>Age</td>
+              <td>Age:</td>
               <td>{age}</td>
             </tr>
             <tr>
-              <td>Personality Type</td>
+              <td>Personality Type:</td>
               <td>{personalityType}</td>
             </tr>
             <tr>
-              <td>Interests</td>
+              <td>Interests:</td>
               <td>{interests}</td>
             </tr>
           </tbody>

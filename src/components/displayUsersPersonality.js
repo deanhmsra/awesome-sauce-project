@@ -18,7 +18,7 @@ export default function displayUsersPersonality() {
                     <img src={user.userPhoto} alt={user.username} className="profile-photo" />
                     <div className="user-details">
                         <h3 className="user-name">{user.username}</h3>
-                    <button className="view-profile">View Profile</button>
+                    <button className="view-profile" onClick={() => window.location.href = "/profile"}>View Profile</button>
                     </div>
                     </div>
                 </ListGroup.Item>

@@ -14,7 +14,7 @@ const EventsTable = () => {
 
     return (
         <div className="container mt-4"> 
-          <h1 className="text-center">Events</h1>
+          <h1 className="text-center" style={{color: "rgb(32, 22, 72, 255)"}}>Events</h1>
           <table className="table table-striped"> 
             <thead className="thead-dark"> 
               <tr>
@@ -41,7 +41,7 @@ const EventsTable = () => {
               ))}
             </tbody>
           </table>
-          <h1 className="text-center">Attendees</h1>
+          <h1 className="text-center" style={{color: "rgb(32, 22, 72, 255)"}}>Attendees</h1>
           <table className="table table-striped">
           <thead className="thead-dark">
             <tr>
