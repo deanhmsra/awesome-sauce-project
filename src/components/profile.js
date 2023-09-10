@@ -15,7 +15,8 @@ const Profile = () => {
 
 
 return (
-    <div>
+    <div className="container">
+    <div className="centered-div">
         <h1>Profile</h1>
         <div className="user-container">
             <div className="user-info">
@@ -40,6 +41,7 @@ return (
                 />
             </div>
         </div>
+    </div>
     </div>
 )};
 

@@ -85,12 +85,18 @@
 }
 
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
 
+}
 
+.centered-div {
+  text-align: center;
+}
 
-/* .user-info{
-  flex: 1;
-} */
 
 .user-info {
   flex: 1;
