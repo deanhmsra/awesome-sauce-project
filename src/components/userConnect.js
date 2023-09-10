@@ -3,17 +3,15 @@ import React from 'react';
 const SocialMedia = ({ instagram, facebook, email}) => {
 
     return (
-        <div>
+        <div className="connect-info">
             <h1>Connect With Me Here</h1>
-            <p><a href={instagram}>Instagram</a></p>
-            <p><a href={facebook}>Facebook</a></p>
-            <p><a href={`mailto:${email}`}>Email</a></p>
+            <p><a href={instagram} className="link-with-border">Instagram</a></p>
+            <p><a href={facebook} className="link-with-border">Facebook</a></p>
+            <p><a href={`mailto:${email}`} className="link-with-border">Email</a></p>
         </div>
         )
     } 
 
 
 
-
-    // instagram, facebook and email
-
+export default SocialMedia;
